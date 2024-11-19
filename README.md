@@ -34,32 +34,6 @@ An API-based application that allows users to register, authenticate, and manage
 - Composer
 - MySQL
 
-## Installation
-
-1. Clone the repository:
-    ```sh
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
-
-2. Install dependencies:
-    ```sh
-    composer install
-    ```
-
-3. Set up the MySQL database:
-    ```sql
-    CREATE DATABASE library;
-    ```
-
-4. Update the database credentials in the PHP code:
-    ```php
-    $servername = "127.0.0.1";
-    $dbusername = "root";
-    $dbpassword = "";
-    $dbname = "library";
-    ```
-
 ## API Endpoints
 
 ### User Registration
@@ -70,8 +44,8 @@ An API-based application that allows users to register, authenticate, and manage
 - **Payload:**
     ```json
     {
-        "username": "exampleUser",
-        "password": "examplePassword"
+        "username": "Reanzue",
+        "password": "Password"
     }
     ```
 - **Response:**
@@ -99,8 +73,8 @@ An API-based application that allows users to register, authenticate, and manage
 - **Payload:**
     ```json
     {
-        "username": "exampleUser",
-        "password": "examplePassword"
+        "username": "Reanzue",
+        "password": "Password"
     }
     ```
 - **Response:**
@@ -133,8 +107,8 @@ An API-based application that allows users to register, authenticate, and manage
 - **Payload:**
     ```json
     {
-        "bookTitle": "Book Title",
-        "authorName": "Author Name"
+        "bookTitle": "Mathematics",
+        "authorName": "Albert"
     }
     ```
 - **Response:**
@@ -168,9 +142,9 @@ An API-based application that allows users to register, authenticate, and manage
     ```json
     {
         "bookId": 1,
-        "bookTitle": "Updated Book Title",
+        "bookTitle": "English",
         "authorId": 1,
-        "authorName": "Updated Author Name"
+        "authorName": "Mark"
     }
     ```
 - **Response:**
@@ -237,8 +211,8 @@ An API-based application that allows users to register, authenticate, and manage
 - **Payload:**
     ```json
     {
-        "username": "exampleUser",
-        "newPassword": "newExamplePassword"
+        "username": "Reanzue",
+        "newPassword": "Rola"
     }
     ```
 - **Response:**
@@ -262,5 +236,3 @@ An API-based application that allows users to register, authenticate, and manage
 ## Running the Application
 
 Start the application using the PHP built-in server:
-```sh
-php -S localhost:8000 -t public
