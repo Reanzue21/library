@@ -20,4 +20,19 @@ This project provides a RESTful API for managing a library system. It includes f
 
 ---
 
-## API ENDPOINTS
+## API Endpoints
+
+### User Endpoints
+
+#### **1. Register User**
+- **URL**: `/user/register`
+- **Method**: `POST`
+- **Description**: Registers a new user with a unique username.
+- **Request Body**:
+  ```json
+  {
+    "username": "Reanzue",
+    "password": "password"
+  }
+ **Response**:
+ 200 OK
