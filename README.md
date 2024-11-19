@@ -26,3 +26,6 @@ This project provides a RESTful API for managing a library system. It includes f
    ```bash
    git clone <repository-url>
    cd <repository-folder>
+### 2. Install Dependencies:
+```bash
+composer install
