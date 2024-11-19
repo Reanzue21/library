@@ -40,6 +40,7 @@ A library management system using Slim framework, JWT for authentication, and a 
 
 - **Endpoint:** `/user/register`
 - **Method:** `POST`
+- **Description:** Registers a new user in the system.
 - **Payload:**
     ```json
     {
@@ -68,6 +69,7 @@ A library management system using Slim framework, JWT for authentication, and a 
 
 - **Endpoint:** `/user/authenticate`
 - **Method:** `POST`
+- **Description:** Authenticates a user and provides a JWT token.
 - **Payload:**
     ```json
     {
@@ -101,6 +103,7 @@ A library management system using Slim framework, JWT for authentication, and a 
     ```http
     Authorization: Bearer jwt_token
     ```
+- **Description:** Inserts a new book and author record into the system and links them.
 - **Payload:**
     ```json
     {
@@ -134,6 +137,7 @@ A library management system using Slim framework, JWT for authentication, and a 
     ```http
     Authorization: Bearer jwt_token
     ```
+- **Description:** Updates existing book and author records in the system.
 - **Payload:**
     ```json
     {
@@ -169,6 +173,7 @@ A library management system using Slim framework, JWT for authentication, and a 
     ```http
     Authorization: Bearer jwt_token
     ```
+- **Description:** Deletes a book-author link and the corresponding book and author records from the system.
 - **Payload:**
     ```json
     {
@@ -202,6 +207,7 @@ A library management system using Slim framework, JWT for authentication, and a 
     ```http
     Authorization: Bearer jwt_token
     ```
+- **Description:** Changes the password for a user and provides a new JWT token.
 - **Payload:**
     ```json
     {
