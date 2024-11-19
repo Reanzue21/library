@@ -1,6 +1,32 @@
 # Library Management System
 
-A library management system using Slim framework, JWT for authentication, and a MySQL database.
+An API-based application that allows users to register, authenticate, and manage a collection of books in a library. Users can add new books to the system and view the list of books. The system employs JWT (JSON Web Token) for secure user authentication and token-based authorization to control access to specific endpoints.
+
+## Software and Technologies
+
+- **PHP:** Server-side scripting language.
+- **Slim Framework:** A micro-framework for building RESTful APIs.
+- **JWT (JSON Web Token):** For secure user authentication and authorization.
+- **MySQL:** Database for storing user and book information.
+- **JSON:** For data exchange in API requests and responses.
+
+## Main Highlights
+
+### Dependencies and Configuration
+
+- The project makes use of the Slim framework and Firebase JWT for authentication.
+- Dependencies are managed through the `composer.json` file, and necessary classes are loaded with `vendor/autoload.php`.
+
+### JWT Middleware
+
+- A middleware is in place to ensure that all requests are authenticated using a valid JWT token.
+- The middleware validates the token and extracts the user's information for further request processing.
+- Invalid or reused tokens are denied to uphold security standards.
+
+### Token Generation
+
+- The `generateToken()` function creates a JWT token that expires after one hour.
+- The token payload includes the user's ID and username for authorization purposes.
 
 ## Requirements
 
